@@ -65,19 +65,19 @@ function App() {
         setCountry(e.target.value);
       }}>
         <option value="">Select Country</option>
-        {countries.map(cn => <option>{cn}</option>)}
+        {countries.map(cn => <option value={cn}>{cn}</option>)}
       </select>
       <select  disabled={states.length===0 ? true : false} style={{marginRight: "10px"}} value={state} onChange={(e) => {
         setState(e.target.value);
       }}>
         <option value="">Select State</option>
-        {states.map(st => <option>{st}</option>)}
+        {states.map(st => <option value={st}>{st}</option>)}
       </select>
       <select disabled={cities.length===0 ? true : false} value={city} onChange={(e) => {
         setCity(e.target.value);
       }}>
         <option value="">Select City</option>
-        {cities.map(ct => <option>{ct}</option>)}
+        {cities.map(ct => <option value={ct}>{ct}</option>)}
       </select>
       {city.length!==0 && <div>
         {`You Selected ${city}, ${state}, ${country}`}
