@@ -80,7 +80,7 @@ function App() {
         {cities.map(ct => <option value={ct}>{ct}</option>)}
       </select>
       {city.length!==0 && <div>
-        {`You Selected ${city}, ${state}, ${country}`}
+        {`You selected ${city}, ${state}, ${country}`}
       </div>}
     </div>
   );
